@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Feb  6 14:49:44 2020
-
 @author: kanavgulati
 """
 
@@ -15,26 +14,22 @@ import win32net
 
 
 def BrowseJD():
-    filename = filedialog.askopenfilename(initialdir=".", title="Select A File",
-                                          filetype=(("Doc files", "*.doc"), ("all files", "*.*")))
+    filename = filedialog.askopenfilename(initialdir=".", title="Select A File", filetype=(("Doc files", "*.doc"),("Docx files", "*.docx"),("PDF files", "*.pdf"), ("all files", "*.*")))
     JDFilePath.configure(text=filename)
 
 
 def BrowseCV():
-    filename = filedialog.askopenfilename(initialdir=".", title="Select A File",
-                                          filetype=(("Doc files", "*.doc"), ("all files", "*.*")))
+    filename = filedialog.askopenfilename(initialdir=".", title="Select A File", filetype=(("Doc files", "*.doc"),("Docx files", "*.docx"),("PDF files", "*.pdf"), ("all files", "*.*")))
     CVFilePath.configure(text=filename)
 
 
 def BrowseTracker():
-    filename = filedialog.askopenfilename(initialdir=".", title="Select A File",
-                                          filetype=(("Doc files", "*.doc"), ("all files", "*.*")))
+    filename = filedialog.askopenfilename(initialdir=".", title="Select A File", filetype=(("Doc files", "*.doc"),("Docx files", "*.docx"),("PDF files", "*.pdf"), ("all files", "*.*")))
     TrackerFilePath.configure(text=filename)
 
 
 def BrowsePanel():
-    filename = filedialog.askopenfilename(initialdir=".", title="Select A File",
-                                          filetype=(("Doc files", "*.doc"), ("all files", "*.*")))
+    filename = filedialog.askopenfilename(initialdir=".", title="Select A File", filetype=(("Doc files", "*.doc"),("Docx files", "*.docx"),("PDF files", "*.pdf"), ("all files", "*.*")))
     PanelFilePath.configure(text=filename)
 
 
